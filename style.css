@@ -1,0 +1,271 @@
+/*  ===========================
+======== google fonts ======== 
+============================ */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&display=swap');
+/*  ===========================
+======== Global style ======== 
+============================ */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Martel Sans', sans-serif;
+    background: #fff;
+    color:#333;
+    overflow-x: hidden;
+}
+.example::-webkit-scrollbar {
+    display: none;
+  }
+a{
+    display: inline-block;
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+/*  ===========================
+    ======== header area ======== 
+    ============================ */
+    header{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 19px 15px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    a.nav-link {
+        font-size: 19px;
+        color: #333;
+        font-weight: 700;
+    }
+    .nav-brand a {
+        width: 167px;
+        height: 45px;
+    }
+  svg{
+        text-decoration: none;
+        vertical-align: middle;
+        fill: #e50914;
+        display: inline-block;
+        line-height: 90px;
+    }
+.svg-nfLogo .svg-icon-netflix-logo {
+    height: 45px;
+    width: 167px;
+    vertical-align: middle;
+}
+
+/*Step one */
+.main-question {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 540px;
+    margin: auto;
+    margin-top: 40px;
+}
+.main-question-img {
+    width: 240px;
+    margin: auto;
+}
+
+.main-question-text-box {
+    margin-top: 30px;
+}
+
+h1.heading-main {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 0px 30px;
+}
+
+p.text-bottom {
+    font-size: 18px;
+    padding: 0px 115px;
+}
+
+.main-qestion-width {
+    text-align: center;
+}
+.input-box button{
+    width:100%;
+}
+.input-box button:focus{
+    border: none;
+}
+button, a#mainBtn {
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: #f6121d;
+    font-size: 19px;
+    padding: 15px 133px;
+    border: none;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #fff;
+}
+button, a#mainBtn:focus{
+    border: none;
+    outline: none;
+}
+/*main reg area*/
+div#main-reg-area {
+    width: 440px;
+}
+.step-two .main-question-text-box {
+    text-align: left;
+}
+.step-two h1.heading-main {
+    padding: 0;
+}
+.step-two p.text-bottom {
+    padding: 0;
+}
+.input-box input {
+    width: 100%;
+    height: 60px;
+    padding: 0px 10px 0px;
+    border-radius: 2px;
+    border: solid 1px #8c8c8c;
+    color: #000;
+    margin-bottom: 22px;
+}
+.input-box input:focus {
+    border-color: #0071eb;
+    outline: 0;
+}
+a.reg-btn{
+    width: 100%;
+}
+/*Sign-up-step*/
+#sign-up-step .main-question-img {
+    width: 50px;
+}
+div#sign-up-step {
+    width: 340px;
+}
+#sign-up-step h1.heading-main {
+    padding: 0px 0px;
+}
+.list-wrap {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.list-wrap ul li {
+    padding: 7px 0px;
+}
+.list-wrap ul li span {
+    margin-left: 6px;
+}
+.checkmark-group--icon {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    color: #e50914;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -moz-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    height: 24px;
+    width: 24px;
+}
+/*Final-step*/
+div#final-step {
+    width: 884px;
+}
+#final-step .main-question-text-box {
+    margin-top: 30px;
+    text-align: left;
+}
+#final-step h1.heading-main {
+    padding: 0;
+    margin-top: 5px;
+}
+#final-step p.text-bottom {
+    padding: 0;
+    margin: 0;
+}
+#final-step .list-wrap ul li {
+    padding: 2px 0px;
+}
+.list-wrap{
+    margin-left: 10px;
+}
+.quality {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0px;
+}
+.quality-bottom{
+    margin: 15px 0px;
+    border:none;
+}
+.quality {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span.color-quality {
+    color: #e50914;
+}
+/*  ===========================
+      ==== All Responsive codes ====
+    ============================ */
+
+/* small  mobile :320-767px. */
+@media (max-width: 767px){
+    .main-question {
+        width: 100%;
+    }
+    h1.heading-main {
+        padding: 0px 0px;
+    }
+    p.text-bottom {
+        padding: 0px 0px;
+    }
+    div#main-reg-area {
+        width: 100%;
+        padding: 0 10px;
+    }
+    div#final-step {
+        width: 100%;
+        padding: 0 10px;
+    }
+    nav {
+        padding: 2px 15px;
+    }
+    .nav-brand a {
+        width: 100px;
+        height: 28px;
+    }
+    a.nav-link {
+        font-size: 14px;
+    }
+}
